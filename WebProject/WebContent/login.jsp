@@ -3,21 +3,35 @@
 <head>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<title>loginpage</title>
+<title>Login</title>
 </head>
 <body>
 	<jsp:include page="menu.jsp" />
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="displat-3">로그인</h1>
+			<h1 class="display-3">로그인</h1>
 		</div>
 	</div>
-	<form name="loginform" action="loginprocess.jsp" method="post">
-		<div class="container">
-			<p> 아이디 : <input type="text" name="id">
-			<p> 비밀번호 : <input type="password" name="password">
-			<p> <input type="button" value="로그인" onclick="checkLogin()">
-		</div>
-	</form>
+	<div class="container" align="center">
+
+
+		<form class="loginpage" action="#" method="post">
+			<div class="form-group">
+				<div class="col-sm-3">
+					<label>Id</label> <input type="text" class="form-control" name="id">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-3">
+					<label>Password</label> <input type="password" class="form-control"
+						name="password">
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<button class="form-control" type="button">로그인</button>
+			</div>
+		</form>
+
+	</div>
 </body>
 </html>
